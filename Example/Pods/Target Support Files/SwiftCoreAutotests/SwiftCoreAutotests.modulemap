@@ -1,0 +1,6 @@
+framework module SwiftCoreAutotests {
+  umbrella header "SwiftCoreAutotests-umbrella.h"
+
+  export *
+  module * { export * }
+}
