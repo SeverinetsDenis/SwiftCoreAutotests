@@ -1,0 +1,16 @@
+PODS:
+  - SwiftCoreAutotests (0.1.0)
+
+DEPENDENCIES:
+  - SwiftCoreAutotests (from `../`)
+
+EXTERNAL SOURCES:
+  SwiftCoreAutotests:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  SwiftCoreAutotests: fde8de65e0c6adc56963a39ac0ae776c6d3fae73
+
+PODFILE CHECKSUM: 03e35109d727f2970fc3b3d849988756cf9a93cd
+
+COCOAPODS: 1.5.3
