@@ -30,8 +30,8 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '8.0'
 
-  # s.source_files = 'SwiftCoreAutotests/Classes/**/*'
-  s.source_files = 'SwiftCoreAutotests/Core/**/*'
+   s.source_files = 'SwiftCoreAutotests/Classes/**/*'
+  #s.source_files = 'SwiftCoreAutotests/Example/Core/**/*'
   
   # s.resource_bundles = {
   #   'SwiftCoreAutotests' => ['SwiftCoreAutotests/Assets/*.png']
