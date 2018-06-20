@@ -25,13 +25,19 @@ Pod::Spec.new do |s|
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'severinetsdenis' => 'severinetsdenis@gmail.com' }
-  s.source           = { :git => 'https://github.com/severinetsdenis/SwiftCoreAutotests.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/severinetsdenis/SwiftCoreAutotests.git', :branch => "master", :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
+  s.tvos.deployment_target = '9.0'
 
-   s.source_files = 'SwiftCoreAutotests/Classes/**/*'
-  #s.source_files = 'SwiftCoreAutotests/Example/Core/**/*'
+# s.source_files = 'SwiftCoreAutotests/Classes/**/*'
+  s.source_files = 'SwiftCoreAutotests/**/*'
+  
+  s.weak_framework = "XCTest"
+  s.pod_target_xcconfig = {
+      'FRAMEWORK_SEARCH_PATHS' => '$(inherited) "$(PLATFORM_DIR)/Developer/Library/Frameworks"',
+  }
   
   # s.resource_bundles = {
   #   'SwiftCoreAutotests' => ['SwiftCoreAutotests/Assets/*.png']
